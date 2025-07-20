@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דשבורד אסטרטגי - דלאל</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6e45e2, #88d3ce);
+            color: #333;
+            direction: rtl;
+        }
+        header {
+            background: linear-gradient(90deg, #4b79a1, #283e51);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .dashboard-info {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        .tableau-container {
+            width: 100%;
+            height: 600px;
+            margin-top: 2rem;
+        }
+        .btn {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 1rem;
+        }
+        .btn:hover {
+            background: linear-gradient(45deg, #ff8e53, #ff6b6b);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #283e51;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .tableau-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>דשבורד אסטרטגי</h1>
+        <p>תובנות ברמה גבוהה לקבלת החלטות אסטרטגיות</p>
+    </header>
+    <div class="container">
+        <div class="dashboard-info">
+            <h2>אודות הדשבורד האסטרטגי</h2>
+            <p>דשבורד זה מציג נתונים ברמה האסטרטגית, כולל מגמות מכירות, ניתוח רווחיות והמלצות לרכש עתידי. המטרה היא לסייע למנהלים לקבל החלטות מושכלות לשיפור ביצועי הרשת.</p>
+        </div>
+        <div class="tableau-container">
+            <iframe src="https://public.tableau.com/views/Book1_17530312672520/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <button class="btn" onclick="window.location.href='index.html'">חזור לדף הראשי</button>
+    </div>
+    <footer>
+        <p>&copy; 2025 רשת בתי הקפה דלאל. כל הזכויות שמורות.</p>
+    </footer>
+</body>
+</html>
